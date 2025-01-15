@@ -1,5 +1,8 @@
 # Netflix GPT
 
+HOSTED @ https://netflixgpt-48b84.web.app/
+USE VPN EXTENSION OR SOME VPN. THE TBMD APIS IS BLOCKED WITH JIO NETWORKS.
+
 # Features
 - Login/Sign Up
     - Sign In /Sign up Form
