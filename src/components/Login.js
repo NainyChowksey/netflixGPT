@@ -78,7 +78,7 @@ const Login = () => {
         <h1 className='p-2 font-bold text-3xl mb-4'>{isSignIn ? 'Sign In' : 'Sign Up'}</h1>
         {!isSignIn && <input ref={name} className="bg-black m-2 p-4 w-full  border-gray-600  border text-white rounded-sm bg-opacity-0" text="Name" type="text" placeholder='Full Name' />}
         <input ref={email} className="bg-black  border-gray-600  border m-2 p-4 w-full rounded-sm bg-opacity-0" text="Email" type="text" placeholder='Email' />
-        <input ref={password} className="bg-black  border-gray-600 border m-2 p-4 w-full rounded-sm bg-opacity-0" text="Password" type="text" placeholder='Password' />
+        <input ref={password} className="bg-black  border-gray-600 border m-2 p-4 w-full rounded-sm bg-opacity-0" text="Password" type="password" placeholder='Password' />
         <button onClick={handleButtonClick} className='bg-red-800 m-2 mt-8 p-2 w-full rounded-md cursor-pointer'>{isSignIn ? 'Sign In' : 'Sign up'}</button>
         <span className='text-red-600 text-sm text-bold m-2'>{errorMessage}</span>
         <p className='p-2 text-l text-gray-400 cursor-pointer mb-8' onClick={handleSignInToggle}>{isSignIn ? 'New to Netflix?' : 'Already an user?'}<span className='text-white'> {isSignIn ? 'Sign up now.' : 'Sign in now.'}</span></p>

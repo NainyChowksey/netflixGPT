@@ -5,6 +5,8 @@ import { useSelector } from 'react-redux'
 
 
 const SecondaryContainer = () => {
+
+
 const popularMoviesList = useSelector((store)=>store.movies?.popularMovies)
 const upcomingMoviesList = useSelector((store)=>store.movies?.upcomingMovies)
 const topRatedMoviesList = useSelector((store)=>store.movies?.nowPlayingMovies)

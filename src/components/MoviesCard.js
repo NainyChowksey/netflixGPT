@@ -3,7 +3,7 @@ import { IMAGE_URL } from '../utils/constants'
 
 const MoviesCard = ({posterId}) => {
 
-
+  if (!posterId) return 
   return (
     <div className="w-36 md:w-48 pr-4">
       <img src={IMAGE_URL+posterId} alt='movieimage'/>
