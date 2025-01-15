@@ -5,7 +5,7 @@ import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfi
 import { auth } from "../utils/firebase"
 import { addUser } from '../utils/userSlice';
 import { useDispatch } from 'react-redux';
-import { USER_AVATAR } from '../utils/constants';
+import { BACKGROUND_URL, USER_AVATAR } from '../utils/constants';
 
 const Login = () => {
 
@@ -71,10 +71,10 @@ const Login = () => {
     <div>
       <Header />
       <div className='absolute'>
-        <img className="object-cover " src="https://assets.nflxext.com/ffe/siteui/vlv3/2f5a878d-bbce-451b-836a-398227a34fbf/web/IN-en-20241230-TRIFECTA-perspective_5ab944a5-1a71-4f6d-b341-8699d0491edd_medium.jpg"
+        <img className="object-cover w-screen h-screen" src={BACKGROUND_URL}
           alt="logo" />
       </div>
-      <form onSubmit={(e) => e.preventDefault()} className="w-3/12 absolute p-12 bg-black my-36 mx-auto right-0 left-0 text-white rounded-lg bg-opacity-80">
+      <form onSubmit={(e) => e.preventDefault()} className=" w-screen md:w-3/12 absolute p-12 bg-black my-36 mx-auto right-0 left-0 text-white rounded-lg bg-opacity-80">
         <h1 className='p-2 font-bold text-3xl mb-4'>{isSignIn ? 'Sign In' : 'Sign Up'}</h1>
         {!isSignIn && <input ref={name} className="bg-black m-2 p-4 w-full  border-gray-600  border text-white rounded-sm bg-opacity-0" text="Name" type="text" placeholder='Full Name' />}
         <input ref={email} className="bg-black  border-gray-600  border m-2 p-4 w-full rounded-sm bg-opacity-0" text="Email" type="text" placeholder='Email' />

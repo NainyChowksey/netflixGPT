@@ -70,7 +70,7 @@ const GptSearch = () => {
           alt="Background"
         />
       </div>
-      <div className="relative w-full max-w-2xl mx-auto pt-40 mb-20">
+      <div className="relative w-full max-w-2xl mx-auto pt-60 p-6 md:p-0 md:pt-40 mb-20">
         <form
           className="grid grid-cols-6 gap-4 items-center"
           onSubmit={(e) => e.preventDefault()}

@@ -43,10 +43,10 @@ const Header = () => {
 
   }
   return (
-    <div className="absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex flex-col md:flex-row justify-between">
+    <div className="absolute w-screen px-8 py-2 bg-black md:bg-gradient-to-b from-black z-10 flex flex-col md:flex-row justify-between">
       <img className="w-44 mx-auto md:mx-0" src={NETFLIX_LOGO}
         alt="logo" />
-      {user && <div className='flex'>
+      {user && <div className='flex justify-center'>
       <button onClick={handleGptToggle} className="text-bold cursor-pointer m-3 mt-4 px-4 py-1 h-9 text-white rounded-lg bg-red-800" >{showGptSearch? 'Home Page' :'Ask GPT'}</button>
       <button onClick={handleSignOut} className="text-bold cursor-pointer m-3 mt-4 px-4 py-1 h-9 text-white rounded-lg bg-red-800">Sign Out</button>
         <img 
